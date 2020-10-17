@@ -232,5 +232,7 @@ function multipicacao(){
         // alert(contador)
     }
     // alert('clicou')
+    // para dar certo a multiplicação no html é preciso inicializar o valor da posição novamente
     contador = 0
+    posicao = 8 //aqui ó deu certo demais!!!
 }
