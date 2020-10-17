@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/cursojsexemplo2.css">
+    <script async src="./js/cursojsexemplo2.js"></script>
+    <title>Exemplo 2 - JavaScript</title>
+</head>
+
+<body>
+    <h1>Conteúdo do curso</h1>
+    <h2>Estrutura condicional</h2>
+    <div id="corazul"></div>
+    <div id="corverde"></div>
+    <div id="corbranca"></div>
+    <p>Sintaxe do comando if.</p>
+    <p>
+        if(condição){
+        <br>
+        &nbsp;&nbsp;bloco de código executa se a condição for verdadeira;
+        <br>
+        }
+    </p>
+    <p>
+        Sintaxe do if-else
+    </p>
+    <p>
+        if(condição){
+        <br>
+        &nbsp;&nbsp;bloco de código que executa se a condição for verdadeira;
+        <br>
+        }else{
+        <br>
+        &nbsp;&nbsp;bloco de código que executa se a condição for falsa.
+        <br>
+        }
+    </p>
+    <p>
+        O comando if-else funciona se a gente não usar as chaves porem se a gente desejar executar mais de um comando
+        devemos concatena-los usando &, o que não é uma pratica muito interessante. por isso usamos as {} e temos
+        liberdade para escrever o código de forma livre dentro dessas chaves.
+    </p>
+    <p>
+        digite as credenciais para acessar!
+    </p>
+    <p>Digite o nome de usuario: </p><input type="text" name="" id="usuario">
+    <p>Você pode acessar usando email: </p><input type="email" name="" id="email">
+    <p>Digite a senha de usuario: </p><input type="password" name="" id="senha">
+    <button id="acessar">Acessar</button>
+    <div id="resposta"></div>
+
+    <h2>Switch case</h2>
+    <p>Sintaxe do switch case</p>
+    <p>
+        Switch(expressão){
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;case (situação 1):
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comando que executa
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break (parada da execução)
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;case (situação 2):
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comando que executa
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break (parada da execução)
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;case (situação 3):
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comando que executa
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break (parada da execução)
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Default (padrão, resposta caso não atenda as demais opções):
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comando que executa
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break (parada da execução)
+        <br>
+        }
+    </p>
+    <p class="alerta">Aqui está a execução da parte pratica do switch case do mês!</p>
+    <p>Veja um exemplo considerando trimestre do ano:</p>
+    <p>Digite o mês: </p> <input type="month" name="" id="mes">
+    <button id="mostrar_mes">Digite o Botão para ver o mês</button>
+    <button id="mostrar_trimestre">Digite o Botão para ver o trimestre</button>
+
+    <h2>Hora da pratica</h2>
+    <p>temas que serão praticados:
+        <br>
+    <ul>
+        <li>Estrutura if-else</li>
+        <li>Estrutura if-else aninhados</li>
+        <li>Estrutura switch</li>
+    </ul>
+    </p>
+
+    <h3>Estrutura switch</h3>
+    <p>Programa contador de número!</p>
+    <p>Qual comando você deseja executar?</p>
+    <p>1 - iniciar || 2 - pausar || 3 - avançar || 4 - retroceder || 5 - desligar</p>
+    <input type="number" name="" id="opcao_menu">
+    <button id="acao_programa">Executar if-else</button>
+    <button id="acao2_programa">Executar if-else aninhados</button>
+    <button id="acao3_programa">Executar Switch case</button>
+    <div id="programa">
+        <p>Estado do programa: </p>
+        <input type="text" name="" id="programa_situacao">
+    </div>
+    <p class="alerta">O exercicio do switch case do mês foi executado acima!</p>
+    <p>Digite o mês: </p> <input type="month" name="" id="mes2">
+    <button id="mostrar2_trimestre">Mostrar trimestre com if-else aninhados</button>
+    <button id="mostrar2_mes">Digite o Botão para ver o mês</button>
+
+    <h2>Loops While e For</h2>
+    <p>Sintaxe do <span class="negrito">while</span></p>
+    <p><span class="negrito">while</span> (condição) {
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;bloco de código
+        <br>
+        }</p>
+    <p>para o while executar a condição precisa ser verdadeira!</p>
+    <p>Demonstrando o poder do while com o exemplo de uma tabuada</p>
+    <p>Digite para ver os resultados da tabuada: </p>
+
+
+    <div id="tabuada">
+        <p>Escolha a tabuada</p>
+        <input type="number" id="valor_da_tabuada">
+        <button id="verificar">Tabuada do:</button>
+
+        <button id="multiplicar_facil">Tabuada facil no HTML</button>
+        <!-- botão para executar a tabuada -->
+        <button id="resultado_multiplicacao">Ver Resultado!</button>
+        <br>
+        <!-- parte 1 -->
+        <input class="tabuada" type="number" name="" id="inputn1">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn2">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="produto1">
+        <br>
+        <!-- parte 2 -->
+        <input class="tabuada" type="number" name="" id="inputn3">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn4">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn5">
+        <br>
+        <!-- parte 3 -->
+        <input class="tabuada" type="number" name="" id="inputn6">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn7">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn8">
+        <br>
+        <!-- parte 4 -->
+        <input class="tabuada" type="number" name="" id="inputn9">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn10">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn11">
+        <br>
+        <!-- parte 5 -->
+        <input class="tabuada" type="number" name="" id="inputn12">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn13">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn14">
+        <br>
+        <!-- parte 6 -->
+        <input class="tabuada" type="number" name="" id="inputn15">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn16">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn17">
+        <br>
+        <!-- parte 7 -->
+        <input class="tabuada" type="number" name="" id="inputn18">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn19">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn20">
+        <br>
+        <!-- parte 8 -->
+        <input class="tabuada" type="number" name="" id="inputn21">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn22">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn23">
+        <br>
+        <!-- parte 9 -->
+        <input class="tabuada" type="number" name="" id="inputn24">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn25">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn26">
+        <br>
+        <!-- parte 10 -->
+        <input class="tabuada" type="number" name="" id="inputn27">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn28">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn29">
+        <br>
+        <!-- parte 10 -->
+        <input class="tabuada" type="number" name="" id="inputn30">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X</p>
+        <input class="tabuada" type="number" name="" id="inputn31">
+        <p class="tabuada">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =</p>
+        <input class="tabuada" type="number" name="" id="inputn32">
+        
+    </div>
+    <footer>
+        <p>
+            <span class="negrito">Professor:</span> Beto <span class="negrito">Aluno:</span> Felipe Dantas
+        </p>
+        <p><span class="rodape"> &copy;Recode Pro 2020</span></p>
+    </footer>
+</body>
+
+</html>
